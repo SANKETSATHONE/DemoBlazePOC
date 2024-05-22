@@ -35,7 +35,7 @@ Framework is developed using Page object model and Pytest framework. Framework i
     - setup a virtual environment for this project
     - install all dependencies from requirement.txt with the help of following command
 ```bash
-    pip install requirements.txt
+    pip install -U -r requirements.txt
 ```
 
 
