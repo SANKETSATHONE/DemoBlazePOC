@@ -43,6 +43,15 @@ class WrapperFunctions:
         except Exception as error:
             print(error)
 
+    def set_text_alert(self,key):
+        try:
+            WebDriverWait(self.driver, 5).until(EC.alert_is_present())
+            alert = self.driver.switch_to.alert
+            return alert.send_keys(key)
+        except Exception as error:
+            print(error)
+
+
     def verify_alert_text(self, text):
         try:
             WebDriverWait(self.driver, 5).until(EC.alert_is_present())
