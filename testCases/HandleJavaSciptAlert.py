@@ -3,7 +3,6 @@ import pytest
 from pageFactory.javaScriptPage import JavaScriptPage
 from generic.ExcelUtil import ExcelUtil
 
-
 class Test_HandelJavaScript:
     driver = None
 

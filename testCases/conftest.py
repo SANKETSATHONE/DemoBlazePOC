@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options as chrOptions
 from selenium.webdriver.firefox.options import Options as fireOptions
 import datetime
 from generic.propertyManager import ReadconfigProperty
-
+from generic.testUtil import TestUtil
 
 
 @pytest.fixture()
@@ -26,6 +26,7 @@ def setup():
     web_driver.maximize_window()
     baseurl = ReadconfigProperty.get_config_data('baseurl')
     web_driver.get(baseurl)
+    TestUtil.get_logger()
     return web_driver
 
 
