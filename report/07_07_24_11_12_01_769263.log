@@ -1,0 +1,7 @@
+2024-07-07 11:12:02,410 [INFO ]  user is able to  click on xpath //button[contains(.,'Click for JS Alert')] 
+2024-07-07 11:12:02,413 [INFO ]  User is able to accept alert popup
+2024-07-07 11:12:06,038 [INFO ]  user is able to  click on xpath //button[contains(.,'Click for JS Confirm')] 
+2024-07-07 11:12:06,041 [INFO ]  User is able to accept alert popup
+2024-07-07 11:12:09,682 [INFO ]  user is able to  click on xpath //button[contains(.,'Click for JS Prompt')] 
+2024-07-07 11:12:09,700 [INFO ]  user is able to set text sanket_tester in alert
+2024-07-07 11:12:12,732 [INFO ]  User is able to accept alert popup
