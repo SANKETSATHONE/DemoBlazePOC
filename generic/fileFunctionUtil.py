@@ -88,4 +88,13 @@ class FileFunctionUtil:
         final_path = create_path[1::]
         return final_path
 
+    @staticmethod
+    def make_dir_for_current_test_name(folder):
+        tc = os.environ.get('PYTEST_CURRENT_TEST').split(':')[-1].split(' ')[0]
+        dir_name = f"{FileFunctionUtil.get_dynamic_path("DemoBlazePOC")}\\everyStepScreenshot\\{folder}\\{tc}"
+        value = os.path.isdir(dir_name)
+        if not value:
+            os.mkdir(dir_name)
+            return dir_name
+
 
