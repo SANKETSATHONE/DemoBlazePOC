@@ -11,7 +11,6 @@ class TestUtil:
         TestUtil.logger = logging.getLogger()
         TestUtil.logger.setLevel(logging.INFO)
 
-        # d = datetime.datetime.now().strftime("%d_%m_%y_%H_%M_%S_%f")
         fileName = datetime.datetime.strftime(datetime.datetime.now(),"%d_%m_%y_%H_%M_%S_%f")
         logPath = FileFunctionUtil.get_dynamic_path("DemoBlazePOC") + "\\report\\"+f"{fileName}.log"
 
